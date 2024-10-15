@@ -1,0 +1,25 @@
+{
+    "automock": false,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "lib/**/*.js",
+        "!test/**"
+    ],
+    "transform": {
+        "^.+\\.js?$": "babel-jest"
+    },
+    "coveragePathIgnorePatterns": [
+        "/node_modules/",
+        "/\\.ignore\\.early\\.",
+        "<rootDir>/lin/test/"
+    ],
+    "testPathIgnorePatterns": [
+        "/node_modules/",
+        "/\\.ignore\\.early\\."
+    ],
+    "watchPathIgnorePatterns": [
+        "<rootDir>/\\.early\\.coverage/",
+        "/\\.ignore\\.early\\."
+    ],
+    "roots": ["<rootDir>/lib"]
+}
